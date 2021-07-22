@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    
+     
+    background-color: #1f1f1f; 
+    
+   
+}
+img{
+    width: 100%;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20%;
+    grid-gap: 1.5em;
+    width: 80%;
+    margin: 1rem auto;
+    
+}
+
+.header,.main,.aside,.footer{
+    border-radius: 10px;
+}
+
+.header{
+    grid-column: 1/-1;
+   
+    grid-row: 1/2;
+    position: relative;
+    font-size: 1.5rem;
+    padding-left: 2em;
+    
+    color:  #ff7707;
+
+    font-family: 'Black Han Sans', sans-serif;
+    
+    
+    
+
+}
+
+.header h1{
+    
+    width: 70%;
+}
+.header div{
+    position: absolute;
+    width: 25%;
+    right: 5%;
+    top: 50%;
+}
+.header img{
+    
+    border: solid whitesmoke 5px;
+    
+}
+
+
+.main{
+    grid-column: 1/3;
+    padding: 1em;
+    background-color: white;
+    
+
+}
+.main h2{
+    font-size: 3rem;
+    text-align: center;
+
+}
+.main h2, h3{
+    color: #202b6a;
+
+}
+.main p{
+    color:black;
+}
+
+.main div{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.uno{
+    width: 20%;
+}
+
+.fmat{
+    width: 30%;
+}
+
+.aside{
+    grid-column: 3/4;
+    text-align: center;
+    background-color: rgb(223,254,195);
+    padding-top: 50%;
+}
+.footer{
+    grid-column: 1/-1;
+    text-align: center;
+    color: #f1eded
+
+}
+@media all and (max-width:1000px){
+    .header{
+        position: inherit;
+        display: flex;
+        align-items: center;
+    
+        font-size: 1.1rem;
+        
+    }
+    .header h1{
+        text-align: center;
+        width: 60%;
+        
+    }
+    .header div{
+        padding: 1em;
+        position: inherit;
+        width: 40%;
+        
+       
+    }
+
+
+    .main{
+        grid-column: 1/-1;
+    }
+
+    .aside{
+
+        grid-column: 1/-1;
+        padding-top: 1em;
+    }
+    
+
+
+}
+
+@media all and (max-width:600px){
+    .header{
+        font-size: 1rem;
+    }
+    .header h1{
+        width: 50%;
+    }
+    .header div{
+        width: 50%;
+    }
+}
